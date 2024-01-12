@@ -11,7 +11,7 @@ export default function SelectHelperText(props: SelectHelperTextProps) {
   }
 
   return (
-    <FormHelperText id={id} variant="standard" {...formHelperTextProps}>
+    <FormHelperText id={id} variant="outlined" {...formHelperTextProps}>
       {helperText}
     </FormHelperText>
   );

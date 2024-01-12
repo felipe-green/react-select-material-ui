@@ -12,10 +12,13 @@ const SelectLabel = (props: SelectLabelProps) => {
 
   return (
     <InputLabel
-      {...inputLabelProps}
       htmlFor={inputId}
       shrink={shrink}
-      variant="standard"
+      variant="outlined"
+      InputLabelProps={{
+        ...inputLabelProps
+        shrink: true,
+      }}
     >
       {label}
     </InputLabel>
